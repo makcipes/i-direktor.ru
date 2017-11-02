@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iDirector Dashboard</title>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./jquery-ui/jquery-ui.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="main-container">
+    <div class="menu">
+        <div class="fixed-wrapper">
+            <div class="mobile-controls mobile-only">
+                <div class="menu-close">
+                    <img src="./img/cross-close.png"/>
+                    <span>Закрыть</span>
+                </div>
+
+                <div class="user">
+                    <div class="userpic" style="background-image: url(./img/userpic.png);">
+                    </div>
+
+                    <div class="username">Лиса Астахова</div>
+
+
+                </div>
+            </div>
+            <div class="company-info-block desktop-only">
+                <div class="company-name">
+                    ООО "КулонСтрой"
+                </div>
+                <div class="company-site">
+                    kulonstroi.ru
+                </div>
+
+            </div>
+
+            <div class="menu-item ">
+                <h3 class="menu-item-title">
+                    <span>Главная</span>
+                </h3>
+
+
+                <h3 class="menu-item-title accordion">
+                    <span>Задачи</span>
+                    <div class="blue-circle circle">5</div>
+                    <div class="red-circle circle">1</div>
+                    <img src="./img/downarrow.svg" width="10" height="6">
+                </h3>
+                <div class="submenu">
+                    <div class="submenu-item">
+                        Создать задачу
+                    </div>
+                    <div class="submenu-item">
+                        Текущие
+                    </div>
+                    <div class="submenu-item">
+                        Новые
+                    </div>
+                    <div class="submenu-item">
+                        Выполнить
+                    </div>
+                    <div class="submenu-item">
+                        Подтвердить
+                    </div>
+                    <div class="submenu-item">
+                        Планерка
+                    </div>
+                    <div class="submenu-item  item auto" data-cat="cat1" data-dir='./pages/tasks.html' data-to='.loadto' onclick="catLoad('./pages/tasks.html','.loadto')">
+                        <a href="#tasks">Все</a>
+                    </div>
+                    <div class="submenu-item">
+                        Периодические задачи
+                    </div>
+                </div>
+
+                <h3 class="menu-item-title accordion">
+                    <span>События</span>
+                    <div class="yellow-circle circle">1</div>
+                    <img src="./img/downarrow.svg" width="10" height="6">
+                </h3>
+                <div class="submenu">
+                    <div class="submenu-item">
+                        Создать событие
+                    </div>
+                    <div class="submenu-item">
+                        Сегодня
+                    </div>
+                    <div class="submenu-item">
+                        Новые
+                    </div>
+                    <div class="submenu-item">
+                        Запланированные
+                        <div class="yellow-circle circle">1</div>
+                    </div>
+                    <div class="submenu-item">
+                        Все события
+                    </div>
+                </div>
+
+                <h3 class="menu-item-title accordion">
+                    <span>События</span>
+                    <img src="./img/downarrow.svg" width="10" height="6">
+                </h3>
+
+                <div class="submenu">
+                    <div class="submenu-item">
+                        Создать событие
+                    </div>
+                    <div class="submenu-item">
+                        Сегодня
+                    </div>
+                    <div class="submenu-item">
+                        Новые
+                    </div>
+                    <div class="submenu-item">
+                        Запланированные
+                    </div>
+                    <div class="submenu-item">
+                        Все события
+                    </div>
+                </div>
+
+                <h3 class="menu-item-title accordion">
+                    <span>Документы</span>
+                    <div class="blue-circle circle">5</div>
+                    <div class="red-circle circle">1</div>
+                    <img src="./img/downarrow.svg" width="10" height="6">
+                </h3>
+                <div class="submenu">
+                    <div class="submenu-item">
+                        Создать документ
+                    </div>
+                    <div class="submenu-item">
+                        Текущие
+                    </div>
+                    <div class="submenu-item">
+                        Новые
+                    </div>
+                    <div class="submenu-item">
+                        Просроченные
+                    </div>
+                    <div class="submenu-item">
+                        К ознакомлению
+                    </div>
+                    <div class="submenu-item">
+                        Все
+                    </div>
+                </div>
+
+                <h3 class="menu-item-title accordion">
+                    <span>Процессы</span>
+                    <div class="yellow-circle circle">1</div>
+                    <img src="./img/downarrow.svg" width="10" height="6">
+                </h3>
+                <div class="submenu">
+                    <div class="submenu-item">
+                        Создать процесс
+                    </div>
+                    <div class="submenu-item">
+                        Текущие
+                    </div>
+                    <div class="submenu-item">
+                        Просроченные
+                    </div>
+                    <div class="submenu-item">
+                        Отложенные
+                        <div class="yellow-circle circle">1</div>
+                    </div>
+                    <div class="submenu-item">
+                        Проблемные
+                    </div>
+                    <div class="submenu-item">
+                        Отказные
+                    </div>
+                    <div class="submenu-item">
+                        Проекты
+                    </div>
+                    <div class="submenu-item">
+                        Все
+                    </div>
+                    <div class="submenu-item">
+                        Рабочие спецификации
+                    </div>
+                    <div class="submenu-item">
+                        Периодические процессы
+                    </div>
+                    <div class="submenu-item">
+                        Технологические карты
+                    </div>
+                </div>
+
+                <h3 class="menu-item-title accordion">
+                    <span>Работы</span>
+                    <img src="./img/downarrow.svg" width="10" height="6">
+                </h3>
+
+                <div class="submenu">
+                    <div class="submenu-item">
+                        Новые
+                    </div>
+                    <div class="submenu-item">
+                        Текущие
+                    </div>
+                    <div class="submenu-item">
+                        Просроченные
+                    </div>
+                    <div class="submenu-item">
+                        Приостановленные
+                    </div>
+                    <div class="submenu-item">
+                        Все
+                    </div>
+                    <div class="submenu-item">
+                        Переводы работ
+                    </div>
+                </div>
+
+                <h3 class="menu-item-title accordion">
+                    <span>Склад</span>
+                    <img src="./img/downarrow.svg" width="10" height="6">
+                </h3>
+
+                <div class="submenu">
+                    <div class="submenu-item">
+                        Товары и услуги
+                    </div>
+                    <div class="submenu-item">
+                        Закупки
+                    </div>
+                    <div class="submenu-item">
+                        Продажи
+                    </div>
+                    <div class="submenu-item">
+                        Списания
+                    </div>
+                    <div class="submenu-item">
+                        Списания материалов
+                    </div>
+                    <div class="submenu-item">
+                        Оприходования
+                    </div>
+                    <div class="submenu-item">
+                        Оприходования продукции
+                    </div>
+                    <div class="submenu-item">
+                        Перемещения
+                    </div>
+                    <div class="submenu-item">
+                        Заявки на доставку
+                    </div>
+                    <div class="submenu-item">
+                        Доставки
+                    </div>
+                    <div class="submenu-item">
+                        Инвентаризация
+                    </div>
+                    <div class="submenu-item">
+                        Уценки
+                    </div>
+                    <div class="submenu-item">
+                        Наценки
+                    </div>
+                    <div class="submenu-item">
+                        Группы товаров
+                    </div>
+                    <div class="submenu-item">
+                        Склады
+                    </div>
+                    <div class="submenu-item">
+                        Складские ячейки
+                    </div>
+                </div>
+
+                <h3 class="menu-item-title accordion">
+                    <span>Деньги</span>
+                    <img src="./img/downarrow.svg" width="10" height="6">
+                </h3>
+
+                <div class="submenu">
+                    <div class="submenu-item">
+                        Приходы и расходы
+                    </div>
+                    <div class="submenu-item">
+                        Взаиморасчеты с контрагентами
+                    </div>
+                    <div class="submenu-item">
+                        Премии и санкции
+                    </div>
+                    <div class="submenu-item">
+                        Выплаты сотрудникам
+                    </div>
+                    <div class="submenu-item">
+                        Взаиморасчеты с сотрудниками
+                    </div>
+                    <div class="submenu-item">
+                        Табель
+                    </div>
+                    <div class="submenu-item">
+                        Касса
+                    </div>
+                </div>
+                <h3 class="menu-item-title accordion">
+                    <span>Справочники</span>
+                    <img src="./img/downarrow.svg" width="10" height="6">
+                </h3>
+
+                <div class="submenu">
+                    <div class="submenu-item">
+                        Контрагенты
+                    </div>
+                    <div class="submenu-item">
+                        Сотрудники
+                    </div>
+                    <div class="submenu-item">
+                        Должности
+                    </div>
+                    <div class="submenu-item">
+                        Отделы
+                    </div>
+                    <div class="submenu-item">
+                        Объекты
+                    </div>
+                    <div class="submenu-item">
+                        Виды санкций
+                    </div>
+                    <div class="submenu-item">
+                        Виды премий
+                    </div>
+                    <div class="submenu-item">
+                        Объявления
+                    </div>
+                    <div class="submenu-item">
+                        Структурная схема
+                    </div>
+                    <div class="submenu-item">
+                        Рассылки
+                    </div>
+                </div>
+                <h3 class="menu-item-title accordion">
+                    <span>Отчеты</span>
+                    <img src="./img/downarrow.svg" width="10" height="6">
+                </h3>
+
+                <div class="submenu">
+                    <div class="submenu-item">
+                        Активность сотрудников за месяц
+                    </div>
+                </div>
+                <h3 class="menu-item-title accordion">
+                    <span>Настройки</span>
+                    <img src="./img/downarrow.svg" width="10" height="6">
+                </h3>
+
+                <div class="submenu">
+                    <div class="submenu-item">
+                        Настройки документов
+                    </div>
+                    <div class="submenu-item">
+                        Настройки процессов
+                    </div>
+                    <div class="submenu-item">
+                        Настройки отчетов
+                    </div>
+                    <div class="submenu-item">
+                        Триггеры
+                    </div>
+                    <div class="submenu-item">
+                        Веб-камеры
+                    </div>
+                    <div class="submenu-item">
+                        Настройки справочников
+                    </div>
+                    <div class="submenu-item">
+                        Доступ
+                    </div>
+                </div>
+
+                <h3 class="menu-item-title">
+                    <span>Последние</span>
+                </h3>
+
+
+            </div> <!-- MENU END-->
+
+            <div class="branding">
+                <img src="./img/logo.png">
+                <span>Инструмент Директора</span>
+            </div>
+        </div>
+    </div>
+    <div class="board">
+        <div class="top-menu">
+            <div class="top-menu-left">
+                <a href="#" class="top-menu-left-link panic">Паникер</a>
+                <a href="#" class="top-menu-left-link">Помощь</a>
+                <a href="#" class="top-menu-left-link">Календарь</a>
+                <a href="#" class="top-menu-left-link">Избранное</a>
+            </div>
+
+            <div class="menu-opener">
+                <img src="./img/menu-sandwich.svg" height="18">
+            </div>
+            <div class="top-menu-center">
+                <img src="./img/search.svg" width="18" height="18">
+                <input type="text" placeholder="Поиск по базе" class="top-menu-center-textinput">
+            </div>
+            <div class="top-menu-right">
+                <div class="top-menu-right-notifications">
+                    <img src="./img/notifications-icon.svg" width="22" height="22">
+                </div>
+
+                <div class="top-menu-right-messages">
+                    <img src="./img/messages-icon.svg" width="22" height="22">
+                </div>
+
+                <div class="top-menu-right-userpic">
+
+                </div>
+
+                <div class="top-menu-right-username">
+                    Астахова Л.С
+                </div>
+
+                <div class="top-menu-right-downarrow">
+                    <img src="./img/downarrow.svg" width="10" height="6">
+                </div>
+
+                <div class="top-menu-right-exit">
+                    <img src="./img/exit.svg" width="19" height="22">
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard">
+
+            <div class="mobile-company-info mobile-only">
+                <div class="mobile-company-name">
+                    ООО «Кулон-строй»
+                </div>
+
+                <div class="mobile-company-site">
+                    kulon-stroi.ru
+                </div>
+            </div>
+            <div class="item auto" data-cat="cat1" data-dir='./pages/page1.html' data-to='.loadto' onclick="catLoad('./pages/page1.html','.loadto')"><a href="#page1">Страница 1</a></div>
+            <div class="item" data-cat="cat1" onclick="catLoad('./pages/page2.html','.loadto')"><a href="#page2">Страница 2</a></div>
+            <div class="item" data-cat="cat1" onclick="catLoad('./pages/page3.html','.loadto')"><a href="#page3">Страница 3</a></div>
+
+            <div class="loadto">
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
