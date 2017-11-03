@@ -1,0 +1,99 @@
+.tasks{
+    margin-top: 60px;
+    padding: 20px 15px;
+    width: 100%;
+    color: #333333;
+}
+.tasks .top{
+    display: flex;
+
+    justify-content: space-between;
+}
+.tasks .top *{
+    display: flex;
+}
+.tabpanel{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+.tabs1{
+    margin-bottom: 8px;
+}
+.tasks table{
+    border-spacing: 0px ;
+    width: 100%;
+}
+
+.icon_item, .tab_item{
+    margin-top: 20px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.tab_item:after {
+    margin-top: 5px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #a2bfff;
+    transform: scale(0);
+    transition: .2s;
+}
+.tab_item:hover:after {
+    transform:scale(1);
+}
+.tasks td, .tasks th{
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    padding: 10px;
+
+}
+.tasks td:first-child{
+    border-left: 1px solid #ddd;
+}
+.tasks td:last-child{
+    border-right: 1px solid #ddd;
+}
+.tasks td:nth-child(4){
+    font-weight: 900;
+}
+.title{
+    align-items: baseline;
+}
+.title h2{
+    font-weight: 100;
+}
+.title .breadcrumps{
+    margin-left: 20px;
+}
+
+.btn1{
+    border: 1px solid #4680ff;
+    color: #4680ff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 10px 25px;
+    margin: 0 10px;
+    font-size: 15px;
+
+}
+.btn2{
+    color: #fff;
+    background-color: #4680ff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border-radius: 3px;
+
+}
+.icon_item a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333333;
+}
+.icon_item a img{
+    margin: 0 5px;
+
+}
