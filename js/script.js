@@ -51,12 +51,14 @@ $( function() {
 } );
 
 
-//ajax cat
+//ajax cat + tablesaw
 function catLoad(dir, to) {
     $.post(dir, function(e) {
         $(to).html(e);
 
         console.log("Страница "+dir+" успешно загружена в блок " + to);
+        //tablesaw init by ajax
+        $(".dashboard").trigger("enhance.tablesaw");
         return false;
     });
 }
@@ -79,3 +81,4 @@ $(function() {
         $(this).addClass('active');
     })
 });
+
