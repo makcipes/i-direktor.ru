@@ -1,4 +1,4 @@
-<div class="tas1ks">
+<div class="tasks">
     <div class="top">
         <div class="title">
             <h2>Задачи сотрудников</h2>
@@ -7,12 +7,12 @@
             </div>
         </div>
         <div class="buttons">
-                <a href="#" class="btn1">Календарь &nbsp; <img src="../img/calendar.png" alt="" width="15" height="15"></a>
-                <a href="#" class="btn2">Добавить задачу</a>
+                <a href="#" class="btn1"> <img src="../img/calendar.png" alt="" width="15" height="15">&nbsp;&nbsp;Календарь </a>
+                <a href="#" class="btn1"><img src="../img/plus.svg" alt="" width="15" height="15">&nbsp;&nbsp;Добавить задачу</a>
         </div>
     </div>
     <div class="top tabpanel">
-        <div class="tabs1">
+        <div class="tabs1 tabs">
             <div class="tab_item">Текущие(11)</div>
             <div class="tab_item">Новые(4)</div>
             <div class="tab_item">Просроченные(9)</div>
@@ -23,23 +23,35 @@
             <div class="tab_item">Все(37)</div>
         </div>
         <div class="icons">
-            <div class="icon_item"><a href="#">Поиск <img src="../img/search.png" alt="" width="15" height="15"></a></div>
-            <div class="icon_item"><a href="#">Печать  <img src="../img/print.png" alt="" width="15" height="15"></a></div>
-            <div class="icon_item"><a href="#">Фильтры  <img src="../img/filter.png" alt="" width="15" height="15"></a></div>
+            <div class="icon_item"><a href="#">Поиск <img src="../img/search.svg" alt="" width="15" height="15"></a></div>
+            <div class="icon_item"><a href="#">Печать  <img src="../img/print.svg" alt="" width="15" height="15"></a></div>
+            <div class="icon_item"><a href="#">Фильтры  <img src="../img/filter.svg" alt="" width="15" height="15"></a></div>
+        </div>
+        <div class="mobtabs">
+            <select>
+                <option>Текущие(11)</option>
+                <option>Новые(4)</option>
+                <option>Просроченные(9)</option>
+                <option>Выполнить(6)</option>
+                <option>Для ознакомления(3)</option>
+                <option>Планерка(1)</option>
+                <option>Последние(3)</option>
+                <option>Все(37)</option>
+            </select>
         </div>
     </div>
-    <table class="tablesaw tablesaw-swipe" data-tablesaw-mode="swipe">
+    <table class="table" data-show-toggle="false" data-expand-first="true">
         <thead>
             <tr>
-                <th><input type="checkbox"></th>
+                <th ><input type="checkbox"></th>
                 <th>№</th>
-                <th>Дата</th>
-                <th>Задача</th>
-                <th>От кого</th>
-                <th>Кому</th>
-                <th>План-дата</th>
-                <th>Процесс</th>
-                <th>Действия</th>
+                <th data-breakpoints="m s">Дата</th>
+                <th >Задача</th>
+                <th data-breakpoints="m s">От кого</th>
+                <th data-breakpoints="m s">Кому</th>
+                <th data-breakpoints="s">План-дата</th>
+                <th data-breakpoints="s">Процесс</th>
+                <th data-breakpoints="s">Действия</th>
             </tr>
         </thead>
         <tbody>

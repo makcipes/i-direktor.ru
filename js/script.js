@@ -51,17 +51,25 @@ $( function() {
 } );
 
 
-//ajax cat + tablesaw
+//ajax cat
 function catLoad(dir, to) {
     $.post(dir, function(e) {
         $(to).html(e);
 
         console.log("Страница "+dir+" успешно загружена в блок " + to);
-        //tablesaw init by ajax
-        $(".dashboard").trigger("enhance.tablesaw");
+//adaptive table
+        $('.table').footable({
+            "breakpoints": {
+                "s": 480,
+                "m": 768,
+                "l": 1200
+
+            }
+        });
         return false;
     });
 }
+
 
 $(function() {
     $(".auto").each(function() {
@@ -81,4 +89,6 @@ $(function() {
         $(this).addClass('active');
     })
 });
+
+
 

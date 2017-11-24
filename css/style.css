@@ -27,6 +27,7 @@
 	justify-content: center;
 	max-width:1920px;
 	position:relative;
+
 }
 
 
@@ -36,11 +37,13 @@
 	/*width:267px;*/
 	color: #ffffff;
 	min-width:267px;
+	width: 20%;
 }
 
 .main-container .board {
 	background:#ffffff;
 	flex-grow:1;
+	width: 80%;
 
 }
 
@@ -202,8 +205,9 @@
 	padding-left:26px;
 	padding-right:26px;
 	position: fixed;
-    width: 100%;
+
     z-index: 100;
+	width: 80%;
 }
 
 .main-container .board .top-menu-left a {
@@ -491,6 +495,7 @@
 	.main-container .board .top-menu {
 		padding-left:5%;
 		padding-right:5%;
+		width: 100%;
 	}
 
 	.main-container .board .top-menu-center input {

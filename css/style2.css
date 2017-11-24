@@ -8,6 +8,7 @@
     display: flex;
 
     justify-content: space-between;
+
 }
 .tasks .top *{
     display: flex;
@@ -17,7 +18,7 @@
     margin-bottom: 30px;
 }
 .tabs1{
-    margin-bottom: 8px;
+    margin-bottom: 0px!important;
 }
 .tasks table{
     border-spacing: 0px ;
@@ -26,19 +27,30 @@
 
 .icon_item, .tab_item{
     margin-top: 20px;
-    margin-right: 5px;
+    margin-right: 15px;
     display: flex;
     flex-direction: column;
+    transition: .5s;
+
 }
 .tab_item:after {
-    margin-top: 5px;
+    margin-bottom: -1px;
+    margin-top: 12px;
     content: '';
     display: block;
     width: 100%;
     height: 2px;
-    background: #a2bfff;
+    background: #568AFF;
     transform: scale(0);
     transition: .2s;
+}
+.tab_item:hover{
+    color: #568AFF;
+    transition: .2s;
+}
+.icon_item a img:hover{
+    fill: #568AFF;
+
 }
 .tab_item:hover:after {
     transform:scale(1);
@@ -69,25 +81,16 @@
 }
 
 .btn1{
-    border: 1px solid #4680ff;
     color: #4680ff;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 3px;
-    padding: 10px 25px;
+    align-self: center;
     margin: 0 10px;
     font-size: 15px;
 
 }
-.btn2{
-    color: #fff;
-    background-color: #4680ff;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px 25px;
-    border-radius: 3px;
 
-}
 .icon_item a{
     text-decoration: none;
     text-transform: uppercase;
@@ -96,4 +99,7 @@
 .icon_item a img{
     margin: 0 5px;
 
+}
+.mobtabs select{
+    display: none!important;
 }
